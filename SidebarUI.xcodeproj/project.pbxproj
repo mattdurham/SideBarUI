@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CBDD33E16967CAC0096BF82 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBDD33D16967CAC0096BF82 /* Cocoa.framework */; };
+		2CBDD34816967CAC0096BF82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CBDD34616967CAC0096BF82 /* InfoPlist.strings */; };
+		2CBDD34A16967CAC0096BF82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBDD34916967CAC0096BF82 /* main.m */; };
+		2CBDD34E16967CAC0096BF82 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2CBDD34C16967CAC0096BF82 /* Credits.rtf */; };
+		2CBDD35116967CAC0096BF82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBDD35016967CAC0096BF82 /* AppDelegate.m */; };
+		2CBDD35416967CAC0096BF82 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBDD35216967CAC0096BF82 /* MainMenu.xib */; };
+		2CBDD35C16967CAC0096BF82 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBDD35B16967CAC0096BF82 /* SenTestingKit.framework */; };
+		2CBDD35D16967CAC0096BF82 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBDD33D16967CAC0096BF82 /* Cocoa.framework */; };
+		2CBDD36516967CAC0096BF82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CBDD36316967CAC0096BF82 /* InfoPlist.strings */; };
+		2CBDD36816967CAC0096BF82 /* SidebarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBDD36716967CAC0096BF82 /* SidebarUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CBDD35E16967CAC0096BF82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CBDD33016967CAC0096BF82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CBDD33816967CAC0096BF82;
+			remoteInfo = SidebarUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CBDD33916967CAC0096BF82 /* SidebarUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CBDD33D16967CAC0096BF82 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2CBDD34016967CAC0096BF82 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2CBDD34116967CAC0096BF82 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2CBDD34216967CAC0096BF82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2CBDD34516967CAC0096BF82 /* SidebarUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SidebarUI-Info.plist"; sourceTree = "<group>"; };
+		2CBDD34716967CAC0096BF82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2CBDD34916967CAC0096BF82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CBDD34B16967CAC0096BF82 /* SidebarUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SidebarUI-Prefix.pch"; sourceTree = "<group>"; };
+		2CBDD34D16967CAC0096BF82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2CBDD34F16967CAC0096BF82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2CBDD35016967CAC0096BF82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2CBDD35316967CAC0096BF82 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2CBDD35A16967CAC0096BF82 /* SidebarUITests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SidebarUITests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CBDD35B16967CAC0096BF82 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2CBDD36216967CAC0096BF82 /* SidebarUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SidebarUITests-Info.plist"; sourceTree = "<group>"; };
+		2CBDD36416967CAC0096BF82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2CBDD36616967CAC0096BF82 /* SidebarUITests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SidebarUITests.h; sourceTree = "<group>"; };
+		2CBDD36716967CAC0096BF82 /* SidebarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SidebarUITests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CBDD33616967CAC0096BF82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBDD33E16967CAC0096BF82 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CBDD35616967CAC0096BF82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBDD35C16967CAC0096BF82 /* SenTestingKit.framework in Frameworks */,
+				2CBDD35D16967CAC0096BF82 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CBDD32E16967CAC0096BF82 = {
+			isa = PBXGroup;
+			children = (
+				2CBDD34316967CAC0096BF82 /* SidebarUI */,
+				2CBDD36016967CAC0096BF82 /* SidebarUITests */,
+				2CBDD33C16967CAC0096BF82 /* Frameworks */,
+				2CBDD33A16967CAC0096BF82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CBDD33A16967CAC0096BF82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CBDD33916967CAC0096BF82 /* SidebarUI.app */,
+				2CBDD35A16967CAC0096BF82 /* SidebarUITests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CBDD33C16967CAC0096BF82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CBDD33D16967CAC0096BF82 /* Cocoa.framework */,
+				2CBDD35B16967CAC0096BF82 /* SenTestingKit.framework */,
+				2CBDD33F16967CAC0096BF82 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CBDD33F16967CAC0096BF82 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CBDD34016967CAC0096BF82 /* AppKit.framework */,
+				2CBDD34116967CAC0096BF82 /* CoreData.framework */,
+				2CBDD34216967CAC0096BF82 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2CBDD34316967CAC0096BF82 /* SidebarUI */ = {
+			isa = PBXGroup;
+			children = (
+				2CBDD34F16967CAC0096BF82 /* AppDelegate.h */,
+				2CBDD35016967CAC0096BF82 /* AppDelegate.m */,
+				2CBDD35216967CAC0096BF82 /* MainMenu.xib */,
+				2CBDD34416967CAC0096BF82 /* Supporting Files */,
+			);
+			path = SidebarUI;
+			sourceTree = "<group>";
+		};
+		2CBDD34416967CAC0096BF82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CBDD34516967CAC0096BF82 /* SidebarUI-Info.plist */,
+				2CBDD34616967CAC0096BF82 /* InfoPlist.strings */,
+				2CBDD34916967CAC0096BF82 /* main.m */,
+				2CBDD34B16967CAC0096BF82 /* SidebarUI-Prefix.pch */,
+				2CBDD34C16967CAC0096BF82 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CBDD36016967CAC0096BF82 /* SidebarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2CBDD36616967CAC0096BF82 /* SidebarUITests.h */,
+				2CBDD36716967CAC0096BF82 /* SidebarUITests.m */,
+				2CBDD36116967CAC0096BF82 /* Supporting Files */,
+			);
+			path = SidebarUITests;
+			sourceTree = "<group>";
+		};
+		2CBDD36116967CAC0096BF82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CBDD36216967CAC0096BF82 /* SidebarUITests-Info.plist */,
+				2CBDD36316967CAC0096BF82 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CBDD33816967CAC0096BF82 /* SidebarUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CBDD36B16967CAC0096BF82 /* Build configuration list for PBXNativeTarget "SidebarUI" */;
+			buildPhases = (
+				2CBDD33516967CAC0096BF82 /* Sources */,
+				2CBDD33616967CAC0096BF82 /* Frameworks */,
+				2CBDD33716967CAC0096BF82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SidebarUI;
+			productName = SidebarUI;
+			productReference = 2CBDD33916967CAC0096BF82 /* SidebarUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CBDD35916967CAC0096BF82 /* SidebarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CBDD36E16967CAC0096BF82 /* Build configuration list for PBXNativeTarget "SidebarUITests" */;
+			buildPhases = (
+				2CBDD35516967CAC0096BF82 /* Sources */,
+				2CBDD35616967CAC0096BF82 /* Frameworks */,
+				2CBDD35716967CAC0096BF82 /* Resources */,
+				2CBDD35816967CAC0096BF82 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CBDD35F16967CAC0096BF82 /* PBXTargetDependency */,
+			);
+			name = SidebarUITests;
+			productName = SidebarUITests;
+			productReference = 2CBDD35A16967CAC0096BF82 /* SidebarUITests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CBDD33016967CAC0096BF82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Matthew Durham";
+			};
+			buildConfigurationList = 2CBDD33316967CAC0096BF82 /* Build configuration list for PBXProject "SidebarUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2CBDD32E16967CAC0096BF82;
+			productRefGroup = 2CBDD33A16967CAC0096BF82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CBDD33816967CAC0096BF82 /* SidebarUI */,
+				2CBDD35916967CAC0096BF82 /* SidebarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CBDD33716967CAC0096BF82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBDD34816967CAC0096BF82 /* InfoPlist.strings in Resources */,
+				2CBDD34E16967CAC0096BF82 /* Credits.rtf in Resources */,
+				2CBDD35416967CAC0096BF82 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CBDD35716967CAC0096BF82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBDD36516967CAC0096BF82 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CBDD35816967CAC0096BF82 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CBDD33516967CAC0096BF82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBDD34A16967CAC0096BF82 /* main.m in Sources */,
+				2CBDD35116967CAC0096BF82 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CBDD35516967CAC0096BF82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBDD36816967CAC0096BF82 /* SidebarUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CBDD35F16967CAC0096BF82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CBDD33816967CAC0096BF82 /* SidebarUI */;
+			targetProxy = 2CBDD35E16967CAC0096BF82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2CBDD34616967CAC0096BF82 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CBDD34716967CAC0096BF82 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2CBDD34C16967CAC0096BF82 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CBDD34D16967CAC0096BF82 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		2CBDD35216967CAC0096BF82 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CBDD35316967CAC0096BF82 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		2CBDD36316967CAC0096BF82 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CBDD36416967CAC0096BF82 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CBDD36916967CAC0096BF82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2CBDD36A16967CAC0096BF82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2CBDD36C16967CAC0096BF82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SidebarUI/SidebarUI-Prefix.pch";
+				INFOPLIST_FILE = "SidebarUI/SidebarUI-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2CBDD36D16967CAC0096BF82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SidebarUI/SidebarUI-Prefix.pch";
+				INFOPLIST_FILE = "SidebarUI/SidebarUI-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2CBDD36F16967CAC0096BF82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SidebarUI.app/Contents/MacOS/SidebarUI";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SidebarUI/SidebarUI-Prefix.pch";
+				INFOPLIST_FILE = "SidebarUITests/SidebarUITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2CBDD37016967CAC0096BF82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SidebarUI.app/Contents/MacOS/SidebarUI";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SidebarUI/SidebarUI-Prefix.pch";
+				INFOPLIST_FILE = "SidebarUITests/SidebarUITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CBDD33316967CAC0096BF82 /* Build configuration list for PBXProject "SidebarUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CBDD36916967CAC0096BF82 /* Debug */,
+				2CBDD36A16967CAC0096BF82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CBDD36B16967CAC0096BF82 /* Build configuration list for PBXNativeTarget "SidebarUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CBDD36C16967CAC0096BF82 /* Debug */,
+				2CBDD36D16967CAC0096BF82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2CBDD36E16967CAC0096BF82 /* Build configuration list for PBXNativeTarget "SidebarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CBDD36F16967CAC0096BF82 /* Debug */,
+				2CBDD37016967CAC0096BF82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CBDD33016967CAC0096BF82 /* Project object */;
+}
