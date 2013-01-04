@@ -48,25 +48,28 @@ CGFloat const LINE_WIDTH = 3.0f;
     [[NSColor colorWithCGColor:CGColorCreateGenericRGB(.25, .25, .25, 1.0)] set];
     [NSBezierPath setDefaultLineWidth:LINE_WIDTH];
     [NSBezierPath strokeLineFromPoint:leftPoint toPoint:rightPoint];
+    NSRect fillRect = NSMakeRect(leftPointX , leftPointY + (LINE_WIDTH / 2), dirtyRect.size.width - ( LINE_WIDTH  ), (dirtyRect.size.height * .80) - (LINE_WIDTH));
     if(false)
     {
         [[self successColor] set];
-       
     }
-    else if(true)
+    else if(false)
     {
         [[self failureColor] set];
     }
     else if(true)
     {
-        [[self inProgressColor] set];
+       
     }
     else if(true)
     {
         [[self idleColor] set];
     }
-    NSRect fillRect = NSMakeRect(leftPointX , leftPointY + (LINE_WIDTH / 2), dirtyRect.size.width - ( LINE_WIDTH  ), (dirtyRect.size.height * .80) - (LINE_WIDTH));
-    NSRectFill(fillRect);
+    if(false)
+    {
+        
+        NSRectFill(fillRect);
+    }
 }
 
 - (NSColor*) successColor
