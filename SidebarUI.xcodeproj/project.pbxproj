@@ -17,6 +17,8 @@
 		2CBDD35D16967CAC0096BF82 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBDD33D16967CAC0096BF82 /* Cocoa.framework */; };
 		2CBDD36516967CAC0096BF82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CBDD36316967CAC0096BF82 /* InfoPlist.strings */; };
 		2CBDD36816967CAC0096BF82 /* SidebarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBDD36716967CAC0096BF82 /* SidebarUITests.m */; };
+		2CFF57E516967F1B00B5778D /* SideBarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFF57E416967F1B00B5778D /* SideBarCell.xib */; };
+		2CFF57E91696849E00B5778D /* KORSideBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF57E81696849E00B5778D /* KORSideBarItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		2CBDD36416967CAC0096BF82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2CBDD36616967CAC0096BF82 /* SidebarUITests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SidebarUITests.h; sourceTree = "<group>"; };
 		2CBDD36716967CAC0096BF82 /* SidebarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SidebarUITests.m; sourceTree = "<group>"; };
+		2CFF57E416967F1B00B5778D /* SideBarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideBarCell.xib; sourceTree = "<group>"; };
+		2CFF57E71696849E00B5778D /* KORSideBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KORSideBarItem.h; sourceTree = "<group>"; };
+		2CFF57E81696849E00B5778D /* KORSideBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KORSideBarItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +122,10 @@
 				2CBDD34F16967CAC0096BF82 /* AppDelegate.h */,
 				2CBDD35016967CAC0096BF82 /* AppDelegate.m */,
 				2CBDD35216967CAC0096BF82 /* MainMenu.xib */,
+				2CFF57E416967F1B00B5778D /* SideBarCell.xib */,
 				2CBDD34416967CAC0096BF82 /* Supporting Files */,
+				2CFF57E71696849E00B5778D /* KORSideBarItem.h */,
+				2CFF57E81696849E00B5778D /* KORSideBarItem.m */,
 			);
 			path = SidebarUI;
 			sourceTree = "<group>";
@@ -227,6 +235,7 @@
 				2CBDD34816967CAC0096BF82 /* InfoPlist.strings in Resources */,
 				2CBDD34E16967CAC0096BF82 /* Credits.rtf in Resources */,
 				2CBDD35416967CAC0096BF82 /* MainMenu.xib in Resources */,
+				2CFF57E516967F1B00B5778D /* SideBarCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +272,7 @@
 			files = (
 				2CBDD34A16967CAC0096BF82 /* main.m in Sources */,
 				2CBDD35116967CAC0096BF82 /* AppDelegate.m in Sources */,
+				2CFF57E91696849E00B5778D /* KORSideBarItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +456,7 @@
 				2CBDD36D16967CAC0096BF82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CBDD36E16967CAC0096BF82 /* Build configuration list for PBXNativeTarget "SidebarUITests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +465,7 @@
 				2CBDD37016967CAC0096BF82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
