@@ -11,4 +11,7 @@
 @interface KORSideBarItem : NSView
 {
 }
+
+@property (readwrite, retain) NSTimer* animator;
+@property (readwrite) double progressOffset;
 @end
