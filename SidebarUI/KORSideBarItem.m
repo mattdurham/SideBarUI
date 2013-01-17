@@ -53,7 +53,7 @@ CGFloat const LINE_WIDTH = 3.0f;
     /*[self setWantsLayer:YES];
     self.layer.borderWidth = 100.0f;
     [self.layer setBorderColor:CGColorCreateGenericRGB(66, 66, 66, 1.0)];*/
-    self.progressOffset = (self.progressOffset > (2*DEFAULT_stripeWidth)-1) ? 0 : ++self.progressOffset;
+    self.progressOffset = ( self.progressOffset > ( 2 * DEFAULT_stripeWidth ) - 1) ? 0 : ++self.progressOffset;
     [self drawLowerBox:dirtyRect];
     
 }
@@ -137,16 +137,17 @@ CGFloat const LINE_WIDTH = 3.0f;
     [shadow stroke];
 }
 
--(NSBezierPath*)stripeWithOrigin:(NSPoint)origin bounds:(NSRect)frame {
+-(NSBezierPath*)stripeWithOrigin:(NSPoint)origin bounds:(NSRect)frame
+{
     
     float height = frame.size.height;
     
     NSBezierPath* rect = [[NSBezierPath alloc] init];
     
     [rect moveToPoint:origin];
-    [rect lineToPoint:NSMakePoint(origin.x+DEFAULT_stripeWidth, origin.y)];
-    [rect lineToPoint:NSMakePoint(origin.x+DEFAULT_stripeWidth-8, origin.y+height)];
-    [rect lineToPoint:NSMakePoint(origin.x-8, origin.y+height)];
+    [rect lineToPoint:NSMakePoint(origin.x + DEFAULT_stripeWidth, origin.y)];
+    [rect lineToPoint:NSMakePoint(origin.x + DEFAULT_stripeWidth - 8, origin.y + height)];
+    [rect lineToPoint:NSMakePoint(origin.x - 8, origin . y + height)];
     [rect lineToPoint:origin];
     
     return rect;
@@ -156,10 +157,18 @@ CGFloat const LINE_WIDTH = 3.0f;
 {
     NSGradient* gradient = [[NSGradient alloc] initWithStartingColor:DEFAULT_blackColor endingColor:DEFAULT_blackColor];
     NSBezierPath* allStripes = [[NSBezierPath alloc] init];
-    
-    for (int i = 0; i <= frame.size.width/(2*DEFAULT_stripeWidth)+(2*DEFAULT_stripeWidth); i++)
+    BOOL addedPath = YES;
+    //We need to create an initial stripe also
+    if(self.progressOffset  - DEFAULT_stripeWidth > 0)
     {
-        NSBezierPath* stripe = [self stripeWithOrigin:NSMakePoint(i*2*DEFAULT_stripeWidth+ self.progressOffset,(self.frame.size.height * .80)) bounds:frame];
+        //We multiply by 2 since the first division would only give us the rightmost point when we want the left most point origin
+        [allStripes appendBezierPath:[self stripeWithOrigin:NSMakePoint( self.progressOffset  - (DEFAULT_stripeWidth * 2 ) , (self.frame.size.height * .80) ) bounds:frame]];
+        addedPath = YES;
+    }
+    NSInteger maxValue = frame.size.width / ( 2 * DEFAULT_stripeWidth ) + ( 2 * DEFAULT_stripeWidth );
+    for (int i = 0; i <= maxValue ; i++)
+    {
+        NSBezierPath* stripe = [self stripeWithOrigin:NSMakePoint( i * 2 * DEFAULT_stripeWidth + self.progressOffset , (self.frame.size.height * .80) ) bounds:frame];
         [allStripes appendBezierPath:stripe];
     }
    
@@ -168,7 +177,10 @@ CGFloat const LINE_WIDTH = 3.0f;
     NSBezierPath* clipPath = [NSBezierPath bezierPathWithRect:frame];
     [clipPath addClip];
     [clipPath setClip];
-    [gradient drawInBezierPath:allStripes angle:90];
+    if(addedPath)
+    {
+        [gradient drawInBezierPath:allStripes angle:90];
+    }
     
     
 }
