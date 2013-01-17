@@ -126,7 +126,8 @@ CGFloat const LINE_WIDTH = 3.0f;
 
 #pragma mark Drawing
 
--(void)drawShadowInBounds:(NSRect)bounds {
+-(void)drawShadowInBounds:(NSRect)bounds
+{
     [DEFAULT_shadowColor set];
     
     NSBezierPath* shadow = [NSBezierPath bezierPath];
@@ -157,13 +158,11 @@ CGFloat const LINE_WIDTH = 3.0f;
 {
     NSGradient* gradient = [[NSGradient alloc] initWithStartingColor:DEFAULT_blackColor endingColor:DEFAULT_blackColor];
     NSBezierPath* allStripes = [[NSBezierPath alloc] init];
-    BOOL addedPath = YES;
     //We need to create an initial stripe also
     if(self.progressOffset  - DEFAULT_stripeWidth > 0)
     {
         //We multiply by 2 since the first division would only give us the rightmost point when we want the left most point origin
         [allStripes appendBezierPath:[self stripeWithOrigin:NSMakePoint( self.progressOffset  - (DEFAULT_stripeWidth * 2 ) , (self.frame.size.height * .80) ) bounds:frame]];
-        addedPath = YES;
     }
     NSInteger maxValue = frame.size.width / ( 2 * DEFAULT_stripeWidth ) + ( 2 * DEFAULT_stripeWidth );
     for (int i = 0; i <= maxValue ; i++)
@@ -172,16 +171,7 @@ CGFloat const LINE_WIDTH = 3.0f;
         [allStripes appendBezierPath:stripe];
     }
    
-   
-    //clip
-    NSBezierPath* clipPath = [NSBezierPath bezierPathWithRect:frame];
-    [clipPath addClip];
-    [clipPath setClip];
-    if(addedPath)
-    {
-        [gradient drawInBezierPath:allStripes angle:90];
-    }
-    
+    [gradient drawInBezierPath:allStripes angle:90];
     
 }
 
@@ -192,14 +182,17 @@ CGFloat const LINE_WIDTH = 3.0f;
     [gradient drawInBezierPath:bounds angle:90];
 }
 
--(void)startAnimation:(id)sender {
-    if (!self.animator) {
+-(void)startAnimation:(id)sender
+{
+    if (!self.animator)
+    {
         self.animator = [NSTimer scheduledTimerWithTimeInterval:1.0/30 target:self selector:@selector(activateAnimation:) userInfo:nil repeats:YES];
     }
 }
 
 
--(void)activateAnimation:(NSTimer*)timer {
+-(void)activateAnimation:(NSTimer*)timer
+{
     [self setNeedsDisplay:YES];
 }
 

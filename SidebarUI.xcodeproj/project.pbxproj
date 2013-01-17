@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CB6594616A7901F0076F65E /* SideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB6594516A7901F0076F65E /* SideBarViewController.m */; };
+		2CB6594A16A798890076F65E /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB6594816A798890076F65E /* Quartz.framework */; };
+		2CB6594B16A798890076F65E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB6594916A798890076F65E /* QuartzCore.framework */; };
+		2CB6594E16A7A0150076F65E /* SideBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB6594D16A7A0150076F65E /* SideBarView.m */; };
 		2CBDD33E16967CAC0096BF82 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBDD33D16967CAC0096BF82 /* Cocoa.framework */; };
 		2CBDD34816967CAC0096BF82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CBDD34616967CAC0096BF82 /* InfoPlist.strings */; };
 		2CBDD34A16967CAC0096BF82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBDD34916967CAC0096BF82 /* main.m */; };
@@ -32,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CB6594416A7901F0076F65E /* SideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBarViewController.h; sourceTree = "<group>"; };
+		2CB6594516A7901F0076F65E /* SideBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarViewController.m; sourceTree = "<group>"; };
+		2CB6594816A798890076F65E /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		2CB6594916A798890076F65E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2CB6594C16A7A0150076F65E /* SideBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBarView.h; sourceTree = "<group>"; };
+		2CB6594D16A7A0150076F65E /* SideBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarView.m; sourceTree = "<group>"; };
 		2CBDD33916967CAC0096BF82 /* SidebarUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBDD33D16967CAC0096BF82 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2CBDD34016967CAC0096BF82 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -61,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB6594A16A798890076F65E /* Quartz.framework in Frameworks */,
+				2CB6594B16A798890076F65E /* QuartzCore.framework in Frameworks */,
 				2CBDD33E16967CAC0096BF82 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +92,8 @@
 		2CBDD32E16967CAC0096BF82 = {
 			isa = PBXGroup;
 			children = (
+				2CB6594816A798890076F65E /* Quartz.framework */,
+				2CB6594916A798890076F65E /* QuartzCore.framework */,
 				2CBDD34316967CAC0096BF82 /* SidebarUI */,
 				2CBDD36016967CAC0096BF82 /* SidebarUITests */,
 				2CBDD33C16967CAC0096BF82 /* Frameworks */,
@@ -126,6 +140,10 @@
 				2CBDD34416967CAC0096BF82 /* Supporting Files */,
 				2CFF57E71696849E00B5778D /* KORSideBarItem.h */,
 				2CFF57E81696849E00B5778D /* KORSideBarItem.m */,
+				2CB6594416A7901F0076F65E /* SideBarViewController.h */,
+				2CB6594516A7901F0076F65E /* SideBarViewController.m */,
+				2CB6594C16A7A0150076F65E /* SideBarView.h */,
+				2CB6594D16A7A0150076F65E /* SideBarView.m */,
 			);
 			path = SidebarUI;
 			sourceTree = "<group>";
@@ -273,6 +291,8 @@
 				2CBDD34A16967CAC0096BF82 /* main.m in Sources */,
 				2CBDD35116967CAC0096BF82 /* AppDelegate.m in Sources */,
 				2CFF57E91696849E00B5778D /* KORSideBarItem.m in Sources */,
+				2CB6594616A7901F0076F65E /* SideBarViewController.m in Sources */,
+				2CB6594E16A7A0150076F65E /* SideBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

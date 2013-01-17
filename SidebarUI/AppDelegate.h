@@ -8,8 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSViewController <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
-
+-(void) fadeIn;
 @end
